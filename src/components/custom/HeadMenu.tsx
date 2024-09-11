@@ -2,12 +2,9 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Button } from "../ui/button";
 
 interface HeadMenuProps {
   style?: string;

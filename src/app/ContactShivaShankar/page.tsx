@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -21,12 +20,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import CompanyIcon from "@/components/custom/icons/CompanyIcon";
 import IGIcon from "@/components/custom/icons/IGIcon";
 import FBIcon from "@/components/custom/icons/FBIcon";
-import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import LinkedinIcon from "@/components/custom/icons/LinkedinIcon";
 import XIcon from "@/components/custom/icons/XIcon";
 import UserProfileIcon from "@/components/custom/icons/UserProfileIcon";
 import Link from "next/link";
-const page = () => {
+const ContactForm = () => {
   const form = useForm<z.infer<typeof ClientSchema>>({
     resolver: zodResolver(ClientSchema),
     defaultValues: {
@@ -244,4 +242,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactForm;

@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className="mt-2 mx-2 border-4 rounded-xl border-purple-950 flex flex-1 space-x-4  p-4 h-fit">
       <div className="h-fit w-full p-3 font-medium text-purple-950">
         <div className="text-xl">
-          <h1 className="md:text-2xl p-3 font-bold text-xl -mt-4">
+          <h1 className="md:text-2xl p-3 font-extrabold text-xl -mt-4">
             WHY DO YOU NEED A PROFESSIONAL WEBSITE ?
           </h1>
           <div className="p-3 font-semibold md:text-2xl text-lg">

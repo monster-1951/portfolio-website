@@ -3,12 +3,14 @@ import myself from "@/images/Myself.jpg";
 import Image from "next/image";
 import { htmlToText } from "html-to-text";
 import MySocialHandles from "@/components/custom/MySocialHandles";
+
 const help = [
   "Fast and Scalable Web Applications: Leveraging Next.js features like server-side rendering and static site generation, I build websites that are fast, SEO-friendly, and ready to scale as your business grows.",
   "Responsive and User-Centric Design: I ensure your website works seamlessly across all devices, offering a smooth user experience no matter where your customers are accessing it from.",
   "Clean and Maintainable Code: I focus on writing code that is easy to maintain and extend, so you can continue building upon your project as your needs evolve.",
   "Custom Solutions: Whether you need an e-commerce platform, blog, portfolio site, or SaaS application, I can tailor my development process to deliver exactly what you need.",
 ];
+
 const WhyMe = [
   "Tailored Solutions for Your Needs: I take the time to understand your unique business goals, ensuring the web solutions I deliver are customized to drive results specific to your objectives.",
   "Performance-First Approach: I focus on building fast, efficient websites with Next.js and React, ensuring your site loads quickly, boosts SEO, and improves user retention, giving you a competitive edge.",
@@ -20,14 +22,12 @@ const WhyMe = [
 ];
 
 const bio = [
-  "Passionate <b>Next.js developer</b> focused on building fast, scalable, and user-friendly web applications",
-  "Specializes in <b>Next.js<b/>, <b>React,</b> and <b>JavaScript</b>, with a strong foundation in creating responsive, high-performance projects.",
-  "Portfolio features various projects demonstrating expertise in: - <b>Server-side rendering (SSR)</b> - <b>Static site generation (SSG)</b> - <b>Dynamic routing</b> - <b>API integration</b>",
   "Committed to writing clean, maintainable code with a focus on performance and SEO optimization.",
   "Enthusiastic about continuously learning and exploring new technologies to solve complex problems.",
   "Driven by the goal of building impactful digital solutions that offer seamless user experiences.",
   "Always open to collaboration – check out my projects and feel free to reach out",
 ];
+
 const AboutMe = () => {
   const mapp = (array: string[]) => {
     return array.map((point, i) => {
@@ -66,7 +66,33 @@ const AboutMe = () => {
           <div id="bio" className="p-3 text-base space-y-3 ">
             <div className="w- space-y-3 border-b-2 pb-5 md:border- md:px-2 md:pb-2 md:pt-2 sm:h-[580px]">
               <div className="font-bold text-2xl"> Who am I?</div>
-              <div className="p-5"> {mapp(bio)}</div>
+              <div className="p-5">
+                <div className="flex space-x-2">
+                  <span>&#x2022;</span>{" "}
+                  <p>
+                    Passionate <b>Next.js developer</b> focused on building
+                    fast, scalable, and user-friendly web applications
+                  </p>
+                </div>
+                <div className="flex space-x-2">
+                  <span>&#x2022;</span>{" "}
+                  <p>
+                    Specializes in <b>Next.js</b>, <b>React,</b> and{" "}
+                    <b>JavaScript</b>, with a strong foundation in creating
+                    responsive, high-performance projects.
+                  </p>
+                </div>
+                <div className="flex space-x-2">
+                  <span>&#x2022;</span>{" "}
+                  <p>
+                    Portfolio features various projects demonstrating expertise
+                    in: - <b>Server-side rendering (SSR)</b> -{" "}
+                    <b>Static site generation (SSG)</b> - <b>Dynamic routing</b>{" "}
+                    - <b>API integration</b>
+                  </p>
+                </div>
+                {mapp(bio)}
+              </div>
             </div>
           </div>
         </div>
@@ -92,27 +118,26 @@ const AboutMe = () => {
                 focus on:
               </p>
             </div>
-            <div className="p-5"> 
-              {mapp(help)}
-              </div>
+            <div className="p-5">{mapp(help)}</div>
           </div>
-          <div className="p-3 mx-auto border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto sm:h-[449px] hidden 2xl:inline hideScrollBarFireFox hideScrollBar ">
+          {/* <div className="p-3 mx-auto border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto sm:h-[449px] hidden 2xl:inline hideScrollBarFireFox hideScrollBar ">
             <div className="font-bold text-2xl ">
               Why should you prefer me ?
             </div>
             <div className="mt-5 p-5">{mapp(WhyMe)}</div>
-          </div>
-          <div className="lg:w-[300%] xl:w-[200%] 2xl:w-[150%]  sm:flex-col sm:items-center space-y-5 hidden lg:flex">
+          </div> */}
+          {/* <div className="lg:w-[300%] xl:w-[200%] 2xl:w-[150%]  sm:flex-col sm:items-center space-y-5 hidden lg:flex"> */}
+            {/* <MySocialHandles style="hidden lg:flex-col lg:flex items-center w-fit" /> */}
+
+          {/* </div> */}
             <Image
               alt="MySelf"
               src={myself}
               className="sm:w-52 sm:h-52 hidden lg:flex mx-auto rounded-full "
             />
-            <MySocialHandles style="hidden lg:flex-col lg:flex items-center w-fit" />
-          </div>
         </div>
       </div>
-      <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 2xl:hidden sm:h-[449px] 2xl:border-l-2 hideScrollBarFireFox hideScrollBar overflow-y-auto">
+      <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2 hideScrollBarFireFox hideScrollBar overflow-y-auto">
         <div className="font-bold text-2xl"> Why should you prefer me ?</div>
         <div className="mt-5 p-5">{mapp(WhyMe)}</div>
         <p className="font-semibold">
@@ -122,7 +147,10 @@ const AboutMe = () => {
         </p>
       </div>
       {/* Below sm */}
-      <MySocialHandles style="sm:hidden" />
+      <div className="glass flex px-3 justify-between sm:hidden lg:flex">
+        <p className="my-auto text-xl">Follow me on social media :</p>
+        <MySocialHandles style="flex justify-center" />
+      </div>
     </>
   );
 };

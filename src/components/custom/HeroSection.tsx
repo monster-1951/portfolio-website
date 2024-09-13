@@ -13,17 +13,27 @@ const HeroSection = () => {
             WHY DO YOU NEED A PROFESSIONAL WEBSITE ?
           </h1>
           <div className="p-3 font-semibold md:text-2xl text-lg">
-            <p>&#x2022; Build Strong Online Presence 🏆</p>
-            <p>&#x2022; Attract more clients 🧲</p>
-            <p>&#x2022; Make your business grow 💹</p>
+            <div className="flex">
+              <span>&#x2022; </span>
+              <p>Build Strong Online Presence 🏆</p>
+            </div>
+            <div className="flex">
+              <span>&#x2022; </span>
+              <p>Attract more clients 🧲</p>
+            </div>
+            <div className="flex">
+              <span>&#x2022; </span>
+              <p>Make your business grow 💹</p>
+            </div>
             <div className="flex justify-start items-center w-full p-3 space-x-3">
-              <Link href={'/ContactShivaShankar'}>
-              <Button
-                variant={"outline"}
-                className="border-2 w-fit font-semibold hover:font-bold"
-              >
-                Contact me
-              </Button></Link>
+              <Link href={"/ContactShivaShankar"}>
+                <Button
+                  variant={"outline"}
+                  className="border-2 w-fit font-semibold hover:font-bold"
+                >
+                  Contact me
+                </Button>
+              </Link>
               <Button
                 variant={"outline"}
                 className="border-2 w-fit font-semibold hover:font-bold"

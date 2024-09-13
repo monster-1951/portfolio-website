@@ -87,12 +87,14 @@ const AboutMe = () => {
                 As a <b>Next.js developer</b>, my goal is to help you bring your
                 vision to life by creating high-quality, performant websites and
                 applications that meet your business needs. <br />
-                Whether you're looking to build a new website from scratch or
+                Whether you are looking to build a new website from scratch or
                 improve an existing one, <br /> I can provide solutions that
                 focus on:
               </p>
             </div>
-            <div className="p-5"> {mapp(help)}</div>
+            <div className="p-5"> 
+              {mapp(help)}
+              </div>
           </div>
           <div className="p-3 mx-auto border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto sm:h-[449px] hidden 2xl:inline hideScrollBarFireFox hideScrollBar ">
             <div className="font-bold text-2xl ">

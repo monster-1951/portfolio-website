@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import HeroImage from "@/images/Myself.jpg";
+import HeroImage from "@/images/2.jpg";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="mt-2 mx-2 border-4 rounded-xl border-purple-950 flex flex-1 space-x-4  p-4 h-fit">
-      <div className="h-fit w-full p-3 font-medium text-purple-950">
+    <div className="heroBgImage glass mt-2 mx-2 border-4 border-black rounded-xl flex flex-1 space-x-4  p-4 h-fit">
+      <div className="h-fit w-full p-3 font-medium ">
         <div className="text-xl">
           <h1 className="md:text-2xl p-3 font-extrabold text-xl -mt-4">
             WHY DO YOU NEED A PROFESSIONAL WEBSITE ?
@@ -20,13 +20,13 @@ const HeroSection = () => {
               <Link href={'/ContactShivaShankar'}>
               <Button
                 variant={"outline"}
-                className="border-2 border-purple-950 w-fit font-semibold hover:font-bold"
+                className="border-2 w-fit font-semibold hover:font-bold"
               >
                 Contact me
               </Button></Link>
               <Button
                 variant={"outline"}
-                className="border-2 border-purple-950 w-fit font-semibold hover:font-bold"
+                className="border-2 w-fit font-semibold hover:font-bold"
               >
                 Know more
               </Button>

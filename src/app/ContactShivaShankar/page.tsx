@@ -41,15 +41,16 @@ const ContactForm = () => {
     console.log(values);
   }
   return (
-    <div className="mt-2">
-      <h1 className="w-[80%] sm:w-[75%] md:w-[50%] mx-auto p-5 bg-purple-800 text-white font-bold text-center rounded-t-2xl">
-        <p>Enter your details,</p> <p>Shiva Shankar will Contact you shortly</p>
-      </h1>
+    <div className="mt-2 w-[80%] mx-auto">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="bg-purple-200 space-y-8 w-[80%] sm:w-[75%] md:w-[50%] mx-auto p-5 rounded-b-2xl"
+          className="glass space-y-8 w-[80%] sm:w-[60%] md:w-[45%] lg:w-[40%] xl:w-[30%] mx-auto p-5 rounded-b-2xl rounded-t-2xl"
         >
+          <h1 className="p-5 font-bold text-center border-b-2 ">
+            <p>Enter your details,</p>{" "}
+            <p>Shiva Shankar will Contact you shortly</p>
+          </h1>
           <FormField
             control={form.control}
             name="Name"
@@ -105,20 +106,28 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Date 📅</FormLabel>
                 <FormControl>
-                  <Input placeholder="On which date you are free to attend call" {...field} type="date" />
+                  <Input
+                    placeholder="On which date you are free to attend call"
+                    {...field}
+                    type="date"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-           <FormField
+          <FormField
             control={form.control}
             name="PreferredTime"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Time ⌚</FormLabel>
                 <FormControl>
-                  <Input placeholder="At what time you will be free on that day" {...field} type="time" />
+                  <Input
+                    placeholder="At what time you will be free on that day"
+                    {...field}
+                    type="time"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -136,7 +145,11 @@ const ContactForm = () => {
                   </div>
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="Zoom or Google Meet" {...field} type="text" />
+                  <Input
+                    placeholder="Zoom or Google Meet"
+                    {...field}
+                    type="text"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -188,34 +201,17 @@ const ContactForm = () => {
                 <FormLabel>
                   <div className="flex">
                     <p className="h-full my-auto">Social media handler</p>
-                    <Link
-                      href={"https://www.instagram.com"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <IGIcon />
-                    </Link>
-                    <Link
-                      href={"https://www.facebook.com/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FBIcon />
-                    </Link>
-                    <Link
-                      href={"https://www.linkedin.com"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LinkedinIcon />
-                    </Link>
-                    <Link
-                      href={"https://x.com"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <XIcon />
-                    </Link>
+                 
+                      <IGIcon height="24px" width="24px" mt=""/>
+                    
+                    
+                      <FBIcon height="24px" width="24px" mt=""/>
+                 
+                   
+                      <LinkedinIcon height="24px" width="24px" mt=""/>
+                    
+
+                    <XIcon width="24px" height="24px" mt=""/>
                   </div>
                 </FormLabel>
                 <FormControl>
@@ -232,7 +228,7 @@ const ContactForm = () => {
           />
 
           <div className="flex justify-center">
-            <Button className="bg-purple-900 text-white hover:bg-purple-950 hover:text-bold">
+            <Button className="glassButton hover:text-orange-600 rounded-xl">
               Submit
             </Button>
           </div>

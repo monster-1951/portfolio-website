@@ -1,13 +1,23 @@
+import Link from "next/link";
 import React from "react";
 
-const IGIcon = () => {
+interface IGIconProps{
+width:string;
+height:string
+mt:string
+}
+
+const IGIcon = ({width,height,mt}:IGIconProps) => {
   return (
-    <div className="mt-2">
+    <Link  href={"https://www.instagram.com"}
+    target="_blank"
+    rel="noopener noreferrer">
+<div className={`mt-${mt}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
-        width="24px"
-        height="24px"
+        width={ width }
+        height={height}
       >
         <path
           fill="#304ffe"
@@ -100,6 +110,8 @@ const IGIcon = () => {
         </g>
       </svg>
     </div>
+    </Link>
+    
   );
 };
 

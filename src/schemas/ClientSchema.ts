@@ -20,7 +20,7 @@ export const ClientSchema = z.object({
   PreferredTime: z.string(),
   Company: z.string().optional(),
   Location: z.string({ required_error: "Enter the valid location" }),
-  PreferredCommunication: z.string(),
+  PreferredCommunication: z.string({required_error:"Enter either Zoom or Google Meet"}),
   SocialMedia: z
     .string()
     .refine((value) => {

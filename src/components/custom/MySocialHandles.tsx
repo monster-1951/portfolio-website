@@ -13,16 +13,16 @@ const MySocialHandles = ({style}:MySocialHandlesProps) => {
     <div className={`${style} flex`}>
       {" "}
       <div id="insta">
-        <IGIcon height="52px" width="52px" />
+        <IGIcon height="52px" width="52px" mt=""/>
       </div>
       <div id="fb">
-        <FBIcon width="52px" height="52px" />
+        <FBIcon width="52px" height="52px" mt=""/>
       </div>
       <div id="X">
-        <XIcon width="52px" height="52px" />
+        <XIcon width="52px" height="52px" mt=""/>
       </div>
       <div id="LK">
-        <LinkedinIcon width="52px" height="52px" />
+        <LinkedinIcon width="52px" height="52px" mt=""/>
       </div>
       <div id="mail"></div>
       <div id="mobile"></div>

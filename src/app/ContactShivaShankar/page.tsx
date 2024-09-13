@@ -23,7 +23,6 @@ import FBIcon from "@/components/custom/icons/FBIcon";
 import LinkedinIcon from "@/components/custom/icons/LinkedinIcon";
 import XIcon from "@/components/custom/icons/XIcon";
 import UserProfileIcon from "@/components/custom/icons/UserProfileIcon";
-import Link from "next/link";
 const ContactForm = () => {
   const form = useForm<z.infer<typeof ClientSchema>>({
     resolver: zodResolver(ClientSchema),

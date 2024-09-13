@@ -2,11 +2,6 @@ import React from "react";
 import myself from "@/images/Myself.jpg";
 import Image from "next/image";
 import { htmlToText } from "html-to-text";
-import { map } from "zod";
-import IGIcon from "@/components/custom/icons/IGIcon";
-import FBIcon from "@/components/custom/icons/FBIcon";
-import XIcon from "@/components/custom/icons/XIcon";
-import LinkedinIcon from "@/components/custom/icons/LinkedinIcon";
 import MySocialHandles from "@/components/custom/MySocialHandles";
 const help = [
   "Fast and Scalable Web Applications: Leveraging Next.js features like server-side rendering and static site generation, I build websites that are fast, SEO-friendly, and ready to scale as your business grows.",

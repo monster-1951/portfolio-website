@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -39,11 +39,11 @@ const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
       <CardContent className="">
         <Carousel
         className="glass w-[85%] mx-auto"
-        // plugins={[
-        //   Autoplay({
-        //     delay: 2000,
-        //   }),
-        // ]}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
         >
           <CarouselContent className="">
             {Project.Image.map((image, i) => {

@@ -71,8 +71,8 @@ const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
         <div id="Tech stack" className="flex space-x-5">
           <div className="font-semibold">Tech Stack Used : </div>
           <div className="flex-col text-left">
-            {Project.TechStack.map((tech, i) => {
-              return <li>{tech}</li>;
+            {Project.TechStack.map((tech,i) => {
+              return <li key={i}>{tech}</li>;
             })}
           </div>
         </div>

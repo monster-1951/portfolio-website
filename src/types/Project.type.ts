@@ -1,7 +1,8 @@
+import { StaticImageData } from "next/image";
 export interface Project{
     Title: string;
     Description: string;
-    Image: any[];
+    Image: StaticImageData[];
     Link: string;
     Date: string;
     TechStack: string[];

@@ -15,7 +15,7 @@ interface HeadMenuProps {
   style?: string;
 }
 
-const HeadMenu = ({ style }: HeadMenuProps) => {
+const HeadMenu = () => {
   return (
     <>
       <Sheet>

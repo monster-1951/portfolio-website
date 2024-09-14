@@ -11,9 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { GiHamburgerMenu } from "react-icons/gi";
-interface HeadMenuProps {
-  style?: string;
-}
+
 
 const HeadMenu = () => {
   return (

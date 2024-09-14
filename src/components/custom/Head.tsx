@@ -51,7 +51,7 @@ const Head = () => {
       {/* <div className="md:flex hidden lg:hidden p-3">
         <HeadMenu />
       </div> */}
-      <HeadMenu style="lg:hidden" />
+      <HeadMenu  />
     </div>
   );
 };

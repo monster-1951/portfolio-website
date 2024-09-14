@@ -3,29 +3,44 @@ import IGIcon from "./icons/IGIcon";
 import FBIcon from "./icons/FBIcon";
 import XIcon from "./icons/XIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
+import { IoCall } from "react-icons/io5";
+import { IoMail } from "react-icons/io5";
 
-interface MySocialHandlesProps{
-    style:string
+interface MySocialHandlesProps {
+  style: string;
+  AboutPage?: boolean;
 }
 
-const MySocialHandles = ({style}:MySocialHandlesProps) => {
+const MySocialHandles = ({ style, AboutPage }: MySocialHandlesProps) => {
   return (
-    <div className={`${style} flex`}>
+    <div className={`${style} flex `}>
       {" "}
-      <div id="insta">
-        <IGIcon height="52px" width="52px" mt=""/>
+      <div className="flex">
+        <div id="insta">
+          <IGIcon height={AboutPage?'24px':'52px'} width={AboutPage?'24px':'52px'} mt="" />
+        </div>
+        <div id="fb">
+          <FBIcon width={AboutPage?'24px':'52px'} height={AboutPage?'24px':'52px'} mt="" />
+        </div>
       </div>
-      <div id="fb">
-        <FBIcon width="52px" height="52px" mt=""/>
+      <div className="flex">
+        <div id="X">
+          <XIcon width={AboutPage?'24px':'52px'} height={AboutPage?'24px':'52px'} mt="" />
+        </div>
+        <div id="LK">
+          <LinkedinIcon width={AboutPage?'24px':'52px'} height={AboutPage?'24px':'52px'} mt="" />
+        </div>
       </div>
-      <div id="X">
-        <XIcon width="52px" height="52px" mt=""/>
-      </div>
-      <div id="LK">
-        <LinkedinIcon width="52px" height="52px" mt=""/>
-      </div>
-      <div id="mail"></div>
-      <div id="mobile"></div>
+      {AboutPage && (
+        <div className="flex">
+          <div id="mobile" className="p-1 text-red-500">
+            <IoCall />
+          </div>
+          <div id="mail">
+            <IoMail className="text-blue-500 mt-1" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

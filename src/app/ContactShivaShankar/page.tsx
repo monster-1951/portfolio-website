@@ -1,5 +1,5 @@
 "use client";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -18,21 +18,54 @@ import { Input } from "@/components/ui/input";
 import UserProfileIcon from "@/components/custom/icons/UserProfileIcon";
 
 import { ClientReachOutSchema } from "@/schemas/ClientReachOutSchema";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 const ContactForm = () => {
+  const [Sending, setSending] = useState(false);
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof ClientReachOutSchema>>({
     resolver: zodResolver(ClientReachOutSchema),
     defaultValues: {
-      Email:"",
-      Message:"",
-      Name:""
+      Email: "",
+      Message: "",
+      Name: "",
     },
   });
 
   async function onSubmit(values: z.infer<typeof ClientReachOutSchema>) {
-    // console.log("submitted");
-    // console.log(values);
-    await axios.post("/api/SendMessage",values)
+    setSending(true);
+    const response = await axios.post("/api/SendMessage", values)
+    .then(() => {
+      setSending(true);
+      toast({
+        title: "Success 👍",
+        description: "Failed to send message 🥲",
+        variant: "destructive",
+        className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+      });
+      return { data: { success: true } };
+    }
+    ).catch(() => {
+      setSending(false);
+      toast({
+        title: "Failure 👎",
+        description: "Your message is sent ! Check your mailbox! 💫",
+        variant: "destructive",
+        className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+      });
+      return { data: { success: false } };
+    });
+    setSending(false);
     console.log("👍", values, "This is the data from onSubmit function");
+    console.log(response, "resoponded james bond");
+    toast({
+      title: response.data.success ? "Success 👍" : "Failure 👎",
+      description: response.data.success
+        ? "Your message is sent ! Check your mailbox! 💫"
+        : "Failed to send message 🥲",
+      variant: "destructive",
+      className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+    });
   }
   return (
     <div className="-mt-5 w-[80%] mx-auto h-[90vh] flex items-center">
@@ -101,16 +134,19 @@ const ContactForm = () => {
                     />
                   </FormControl>
                   <FormDescription className="text-xs p-2">
-                    This message will be sent to Shiva Shankar and he&apos;ll respond
-                    as soon as possible
+                    This message will be sent to Shiva Shankar and he&apos;ll
+                    respond as soon as possible
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <div className="flex justify-center">
-              <Button className="glassButton hover:text-orange-600 rounded-xl" type="submit">
-                Submit
+              <Button
+                className="glassButton hover:text-lg rounded-xl"
+                type="submit"
+              >
+                {Sending ? "Please wait....." : " Submit"}
               </Button>
             </div>
           </div>

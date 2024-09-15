@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Head from "@/components/custom/Head";
 import Footer from "@/components/custom/Footer";
-
+import { Toaster } from "@/components/ui/toaster"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -32,6 +32,7 @@ export default function RootLayout({
       <body
         className={cn(geistSans.variable ,geistMono.variable ,"bgImage bg-slate-900 antialiased font-serif ")}
       >
+        <Toaster/>
         <Head />
         {children}
         <Footer/>

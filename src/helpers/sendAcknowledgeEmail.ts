@@ -8,6 +8,9 @@ export async function sendAcknowledgeEmail(
   Email: string
 ): Promise<ApiResponse> {
   console.log({Name,Message,Email})
+  if (!process.env.MAIL_ID) {
+    return { success: false, message: "Failed to send Acknowledge email" };
+  }
   try {
     await resend.emails.send({
       from: `Shiva Shankar Web Dev <${process.env.MAIL_ID}>`,

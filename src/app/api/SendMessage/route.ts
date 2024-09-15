@@ -11,6 +11,22 @@ export async function POST(request: Request) {
   try {
     const { Name, Email, Message } = await request.json();
 
+     // Send email
+
+     const emailResponse =await sendAcknowledgeEmail(Name, Message,Email);
+     if (!emailResponse.success) {
+       return Response.json(
+         {
+           success: false,
+           message: emailResponse.message,
+         },
+         {
+           status: 500,
+         }
+       );
+     }
+
+     
     // Create new message
 
     const newMessage = new MessageModel({
@@ -20,26 +36,13 @@ export async function POST(request: Request) {
     });
     await newMessage.save();
 
-    // Send email
-
-    const emailResponse =await sendAcknowledgeEmail(Name, Message,Email);
-    if (!emailResponse.success) {
-      return Response.json(
-        {
-          success: false,
-          message: emailResponse.message,
-        },
-        {
-          status: 500,
-        }
-      );
-    }
+   
 
 
 
 
     return Response.json(
-      { success: "Sucess", newMessage,email:emailResponse },
+      { success: true, newMessage,email:emailResponse },
       {
         status: 201,
       }

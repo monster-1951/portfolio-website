@@ -1,7 +1,6 @@
 import dbConnect from "@/lib/dbConnect";
-import { resend } from "@/lib/resend";
 import MessageModel from "@/models/Message.model";
-import AcknowledgementEmail from "../../../../emails/AcknowledgementEmail";
+
 import { sendAcknowledgeEmail } from "@/helpers/sendAcknowledgeEmail";
 
 export async function POST(request: Request) {

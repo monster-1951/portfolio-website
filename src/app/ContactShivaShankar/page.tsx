@@ -1,5 +1,5 @@
 "use client";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -31,7 +31,7 @@ const ContactForm = () => {
   async function onSubmit(values: z.infer<typeof ClientReachOutSchema>) {
     // console.log("submitted");
     // console.log(values);
-    const response  = await axios.post("/api/SendMessage",values)
+    await axios.post("/api/SendMessage",values)
     console.log("👍", values, "This is the data from onSubmit function");
   }
   return (
@@ -101,7 +101,7 @@ const ContactForm = () => {
                     />
                   </FormControl>
                   <FormDescription className="text-xs p-2">
-                    This message will be sent to Shiva Shankar and he'll respond
+                    This message will be sent to Shiva Shankar and he&apos;ll respond
                     as soon as possible
                   </FormDescription>
                   <FormMessage />

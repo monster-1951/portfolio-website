@@ -3,7 +3,6 @@ import myself from "@/images/Myself.jpg";
 import Image from "next/image";
 import { htmlToText } from "html-to-text";
 import MySocialHandles from "@/components/custom/MySocialHandles";
-
 import NavigateAboutPage from "@/components/custom/NavigateAboutPage";
 const help = [
   {
@@ -205,7 +204,7 @@ const AboutMe = () => {
               src={myself}
               className="sm:w-52 sm:h-52 hidden sm:flex lg:hidden mx-auto rounded-full"
             />
-            <MySocialHandles style="hidden sm:flex lg:hidden sm:justify-center" />
+            <MySocialHandles AboutPage={false} style="hidden sm:flex lg:hidden sm:justify-center" />
           </div>
           <div className="p-3 mx-auto sm:border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto hideScrollBar hideScrollBarFireFox sm:h-[449px] h-fit">
             <div className="font-bold text-2xl"> How I can help You</div>

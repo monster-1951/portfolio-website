@@ -1,3 +1,3 @@
-export const SampleBlogs = [
-    
+export const SampleBlogs :Blog[] = [
+
 ]

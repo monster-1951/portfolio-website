@@ -3,7 +3,7 @@ import React from "react";
 
 const CallIcon = () => {
   return (
-    <Link href={"tel:+917816081995"}>
+    <>
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const CallIcon = () => {
           transform="translate(14,3)"
         />
       </svg>
-    </Link>
+    </>
   );
 };
 

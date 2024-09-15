@@ -33,7 +33,7 @@ export const Projects: Project[] = [
     {
       Title: "Clone of Medium.com",
       Description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dolorum nam tenetur, perspiciatis autem sequi pariatur totam dolorem sit reprehenderit debitis voluptas officia repellat provident veniam quae ut nostrum. Aperiam, iure. Neque repudiandae repellendus rem debitis nostrum. Deserunt, saepe nostrum. Molestiae exercitationem ut totam dignissimos? Nemo dolores optio fugiat cum!",
+        "This is my first major project . It is the clone of a famous blogging platform called Medium. You can google it to see the original one . This project improved my problem solving skills and made my approach towards development more better . Even though it is pure frontend project that has no connection with any kind of database , I smartly made arrangements for it to store the blogs that users upload. The reason I've not used backend was I just knew frontend that time . This project proved how well I can implement the available resources more efficiently . Just give it a try 😊",
       Image: [
         Medium,
         Medium1,
@@ -51,7 +51,7 @@ export const Projects: Project[] = [
     {
       Title: "Blogging Platform",
       Description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dolorum nam tenetur, perspiciatis autem sequi pariatur totam dolorem sit reprehenderit debitis voluptas officia repellat provident veniam quae ut nostrum. Aperiam, iure. Neque repudiandae repellendus rem debitis nostrum. Deserunt, saepe nostrum. Molestiae exercitationem ut totam dignissimos? Nemo dolores optio fugiat cum!",
+        "This is my favourite major project . It is almost similar to the previous one but this time I included backend also . Previously I just used frontend and made an amazing web app but now I have backend knowledge so, it is more awesome . There is feature for everyone to create their own account , login ,create blog posts that support image uploads , users can like the posts , they can set a profile picture and so on..... Of course the design was same as the previous one but the functionality has increased a lot",
       Image: [
         Blog,
         Blog1,
@@ -78,7 +78,7 @@ export const Projects: Project[] = [
     {
       Title: "Recipe Finder",
       Description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dolorum nam tenetur, perspiciatis autem sequi pariatur totam dolorem sit reprehenderit debitis voluptas officia repellat provident veniam quae ut nostrum. Aperiam, iure. Neque repudiandae repellendus rem debitis nostrum. Deserunt, saepe nostrum. Molestiae exercitationem ut totam dignissimos? Nemo dolores optio fugiat cum!",
+        "This is the simple web app where you can search for any recipe and get all the recipes with that name including images,ingredients required and a link to know the full recipe . I've built this project with in 2 dedicated days since I was a beginner by that time",
       Image: [Recipe, Recipe2, Recipe3],
       Link: "https://monster-1951.github.io/RecipeFinder/",
       Date: "April , 2024",
@@ -87,7 +87,7 @@ export const Projects: Project[] = [
     {
       Title: "Weather",
       Description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dolorum nam tenetur, perspiciatis autem sequi pariatur totam dolorem sit reprehenderit debitis voluptas officia repellat provident veniam quae ut nostrum. Aperiam, iure. Neque repudiandae repellendus rem debitis nostrum. Deserunt, saepe nostrum. Molestiae exercitationem ut totam dignissimos? Nemo dolores optio fugiat cum!",
+        "This was my first minor project . It took me 2 dedicatad days to create this project . In this project you can search for any location and get the temperature, humidity , wind speed of that particular location. Of course it was a simple project but it taught me a lot.",
       Image: [Weather, Weather1],
       Link: "https://monster-1951.github.io/Weather/",
       Date: "April , 2024",

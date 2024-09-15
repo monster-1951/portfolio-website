@@ -3,7 +3,7 @@ import React from "react";
 
 const MailIcon = () => {
   return (
-    <Link href={"mailto:shivashankarsince19@gmail.com"}>
+    <>
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const MailIcon = () => {
           transform="translate(43,17)"
         />
       </svg>
-    </Link>
+    </>
   );
 };
 

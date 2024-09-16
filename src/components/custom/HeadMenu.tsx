@@ -1,4 +1,4 @@
-import { MdOutlineLocalOffer, MdWorkOutline } from "react-icons/md";
+import { MdWorkOutline } from "react-icons/md";
 import Link from "next/link";
 import { HomeIcon } from "@radix-ui/react-icons";
 import { CiCircleInfo } from "react-icons/ci";
@@ -37,14 +37,6 @@ const HeadMenu = () => {
             <Link href={"/MyWork"} className="flex space-x-3">
               <MdWorkOutline className="mt-1" />
               <span>My Work</span>
-            </Link>
-          </SheetTitle>
-        </SheetHeader>
-        <SheetHeader className="p-3">
-          <SheetTitle>
-            <Link href={"/"} className="flex space-x-3">
-              <MdOutlineLocalOffer className="mt-1" />
-              <span>Services Offered </span>
             </Link>
           </SheetTitle>
         </SheetHeader>

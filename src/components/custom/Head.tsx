@@ -43,14 +43,10 @@ const Head = () => {
         <Link href={"/MyWork"}>
           <span className="hover:font-semibold">My Work</span>
         </Link>
-        <span className="hover:font-semibold">Services Offered</span>
         <Link href={"/ContactShivaShankar"}>
           <span className="hover:font-semibold">Contact Me</span>
         </Link>
       </div>
-      {/* <div className="md:flex hidden lg:hidden p-3">
-        <HeadMenu />
-      </div> */}
       <HeadMenu  />
     </div>
   );

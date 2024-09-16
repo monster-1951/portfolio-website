@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className=" flex flex-1 space-x-4  p-4 h-[85vh] sm:h-[90vh]">
-      <div className="flex glass h-fit w-fit mx-auto">
+    <div className=" flex flex-1 space-x-4  p-4 h-[85vh] sm:h-[90vh] ">
+      <div className="flex glass h-fit w-fit mx-auto p-8">
         <div className="h-fit w-full p-3 font-medium">
           <div className="w-full flex rounded-xl">
             <Image
@@ -42,12 +42,14 @@ const HeroSection = () => {
                     Contact me
                   </Button>
                 </Link>
+                <Link href={"/MyWork"}>
                 <Button
                   variant={"outline"}
                   className="border-2 w-fit font-semibold hover:font-bold"
                 >
-                  Know more
+                  See My work
                 </Button>
+                </Link>
               </div>
             </div>
           </div>

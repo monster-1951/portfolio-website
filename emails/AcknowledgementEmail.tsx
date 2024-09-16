@@ -8,8 +8,6 @@ import {
   Heading,
   Hr,
   Html,
-  Img,
-  Link,
   Preview,
   Row,
   Section,
@@ -37,15 +35,6 @@ export const AcknowledgementEmail = ({
       <Tailwind>
         <Body className="bg-slate-900 text-white my-auto mx-auto px-2 font-serif">
           <Container className="rounded my-[40px] mx-auto p-[20px] max-w-[465px] ">
-            {/* <Section className="mt-[32px]">
-              <Img
-                src={`${baseUrl}/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMyself.74ef7ae4.jpg&w=1080&q=75`}
-                width={200}
-                height={200}
-                alt="Vercel"
-                className="my-0 mx-auto"
-              />
-            </Section> */}
             <Heading className="text-white text-[24px] text-center p-0 my-[30px] mx-0 font-bold">
               Thanks for your message !
             </Heading>

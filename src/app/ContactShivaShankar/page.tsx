@@ -96,8 +96,8 @@ const ContactForm = () => {
               name="Name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    <div className="flex space-x-3">
+                  <FormLabel className="font-bold">
+                    <div className="flex space-x-3 ">
                       <p>Name</p>
                       <UserProfileIcon />
                     </div>
@@ -117,8 +117,8 @@ const ContactForm = () => {
               control={form.control}
               name="Email"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email 📩</FormLabel>
+                <FormItem className="py-5">
+                  <FormLabel className="font-bold ">Email 📩</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Email address"
@@ -135,7 +135,7 @@ const ContactForm = () => {
               name="Message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message </FormLabel>
+                  <FormLabel className="font-bold">Message </FormLabel>
                   <FormControl>
                     <Dialog>
                       <DialogTrigger className="w-full">
@@ -157,7 +157,7 @@ const ContactForm = () => {
                             <div className="px-1">
                             You can resize this box as per your convienience .{" "}
                             <br />
-                            Close this dialog once you've completed writing your
+                            Close this dialog once you&apos;ve completed writing your
                             message.
                             </div>
                           </DialogDescription>

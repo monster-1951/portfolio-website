@@ -56,7 +56,7 @@ export const AcknowledgementEmail = ({
               We really appreciate your interest to make your business grow by
               working with us
               <Hr className="my-[16px] border-t-2 border-gray-300" />
-              Your message is : <strong>{Message}</strong>
+              <strong>Your message is : {Message}</strong>
               <Hr className="my-[16px] border-t-2 border-gray-300" />
               Your message has been recieved and Shiva Shankar will respond to
               you shortly
@@ -127,7 +127,7 @@ export const AcknowledgementEmail = ({
                       className="bg-[#12c580] rounded text-white text-[12px] font-semibold no-underline text-center px-5 py-3"
                       href={baseUrl}
                     >
-                      Go to My website
+                      Visit our website
                     </Button>
                   </Section>
                 </Column>

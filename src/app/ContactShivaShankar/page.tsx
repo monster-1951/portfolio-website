@@ -14,6 +14,15 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 import UserProfileIcon from "@/components/custom/icons/UserProfileIcon";
 
@@ -34,27 +43,28 @@ const ContactForm = () => {
 
   async function onSubmit(values: z.infer<typeof ClientReachOutSchema>) {
     setSending(true);
-    const response = await axios.post("/api/SendMessage", values)
-    .then(() => {
-      setSending(true);
-      toast({
-        title: "Success 👍",
-        description: "Failed to send message 🥲",
-        variant: "destructive",
-        className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+    const response = await axios
+      .post("/api/SendMessage", values)
+      .then(() => {
+        setSending(true);
+        toast({
+          title: "Success 👍",
+          description: "Failed to send message 🥲",
+          variant: "destructive",
+          className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+        });
+        return { data: { success: true } };
+      })
+      .catch(() => {
+        setSending(false);
+        toast({
+          title: "Failure 👎",
+          description: "Your message is sent ! Check your mailbox! 💫",
+          variant: "destructive",
+          className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
+        });
+        return { data: { success: false } };
       });
-      return { data: { success: true } };
-    }
-    ).catch(() => {
-      setSending(false);
-      toast({
-        title: "Failure 👎",
-        description: "Your message is sent ! Check your mailbox! 💫",
-        variant: "destructive",
-        className: "glass fixed top-4 inset-x-0 mx-auto max-w-md",
-      });
-      return { data: { success: false } };
-    });
     setSending(false);
     console.log("👍", values, "This is the data from onSubmit function");
     console.log(response, "resoponded james bond");
@@ -127,11 +137,33 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Message </FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder="Enter your message....."
-                      {...field}
-                      type="text"
-                    />
+                    <Dialog>
+                      <DialogTrigger className="w-full">
+                        <Textarea
+                          placeholder="Enter your message....."
+                          {...field}
+                          className="w-full"
+                        />
+                      </DialogTrigger>
+                      <DialogContent className="glass p-5">
+                        <DialogHeader >
+                          <DialogTitle className="py-3">Enter Your Message here...</DialogTitle>
+                          <DialogDescription className="py-3 space-y-5">
+                            <Textarea
+                              placeholder="Enter your message....."
+                              {...field}
+                              className=""
+                            />
+                            <div className="px-1">
+                            You can resize this box as per your convienience .{" "}
+                            <br />
+                            Close this dialog once you've completed writing your
+                            message.
+                            </div>
+                          </DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
                   </FormControl>
                   <FormDescription className="text-xs p-2">
                     This message will be sent to Shiva Shankar and he&apos;ll

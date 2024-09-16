@@ -7,7 +7,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className=" flex flex-1 space-x-4  p-4 h-[85vh] sm:h-[90vh] ">
-      <div className="flex glass h-fit w-fit mx-auto p-8">
+      <div className="flex glass h-fit w-fit mx-auto md:p-8">
         <div className="h-fit w-full p-3 font-medium">
           <div className="w-full flex rounded-xl">
             <Image

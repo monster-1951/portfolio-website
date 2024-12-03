@@ -33,7 +33,21 @@ import Gpt2 from "@/images/projectImages/F1-GPT2.png";
 import Gpt3 from "@/images/projectImages/F1-GPT3.png";
 import Gpt4 from "@/images/projectImages/F1-GPT4.png";
 
+import ZuperMart1 from '@/images/projectImages/zuper-mart1.png'
+import ZuperMart2 from '@/images/projectImages/zuper-mart2.png'
+import ZuperMart3 from '@/images/projectImages/zuper-mart3.jpg'
+import ZuperMart4 from '@/images/projectImages/zuper-mart4.jpg'
+import ZuperMart5 from '@/images/projectImages/zuper-mart5.jpg'
+
 export const Projects: Project[] = [
+  {
+    Title: "ZUPER-MART-ASSISTANT",
+    Description: "It can assist you regarding the products sold in zuper mart(a fictional super market)",
+    Date: "December , 2024",
+    Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4,ZuperMart5],
+    Link: "https://f1-gpt-delta.vercel.app/",
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
+  },
   {
     Title: "F1-GPT",
     Description: "Ask it anything about Formula One Racing car",

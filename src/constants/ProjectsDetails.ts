@@ -1,50 +1,66 @@
 import { Project } from "@/types/Project.type";
 
-import Weather from "@/images/projectImages/WeatherSample.png";
-import Weather1 from "@/images/projectImages/WeatherSample1.png";
+import Weather from "@/images/projectImages/Weather/WeatherSample.png";
+import Weather1 from "@/images/projectImages/Weather/WeatherSample1.png";
 
-import Recipe from "@/images/projectImages/Recipe.png";
-import Recipe2 from "@/images/projectImages/RecipeFind2.png";
-import Recipe3 from "@/images/projectImages/Recipe3.png";
+import Recipe from "@/images/projectImages/RecipeFinder/Recipe.png";
+import Recipe2 from "@/images/projectImages/RecipeFinder/RecipeFind2.png";
+import Recipe3 from "@/images/projectImages/RecipeFinder/Recipe3.png";
 
-import Medium from "@/images/projectImages/Medium.png";
-import Medium1 from "@/images/projectImages/Medium1.png";
-import Medium2 from "@/images/projectImages/Medium2.png";
-import Medium3 from "@/images/projectImages/Medium3.png";
-import Medium4 from "@/images/projectImages/Medium4.png";
-import Medium5 from "@/images/projectImages/Medium5.png";
-import Medium6 from "@/images/projectImages/Medium6.png";
-import Medium7 from "@/images/projectImages/Medium7.png";
+import Medium from  "@/images/projectImages/Medium/Medium.png";
+import Medium1 from "@/images/projectImages/Medium/Medium1.png";
+import Medium2 from "@/images/projectImages/Medium/Medium2.png";
+import Medium3 from "@/images/projectImages/Medium/Medium3.png";
+import Medium4 from "@/images/projectImages/Medium/Medium4.png";
+import Medium5 from "@/images/projectImages/Medium/Medium5.png";
+import Medium6 from "@/images/projectImages/Medium/Medium6.png";
+import Medium7 from "@/images/projectImages/Medium/Medium7.png";
 
-import Blog from "@/images/projectImages/BlogSpot.png";
-import Blog1 from "@/images/projectImages/BlogSpot1.png";
-import Blog2 from "@/images/projectImages/BlogSpot2.png";
-import Blog3 from "@/images/projectImages/BlogSpot3.png";
-import Blog4 from "@/images/projectImages/BlogSpot4.png";
-import Blog5 from "@/images/projectImages/BlogSpot5.png";
-import Blog6 from "@/images/projectImages/BlogSpot6.png";
-import Blog7 from "@/images/projectImages/BlogSpot7.png";
-import Blog8 from "@/images/projectImages/BlogSpot8.png";
-import Blog9 from "@/images/projectImages/BlogSpot9.png";
-import Blog10 from "@/images/projectImages/BlogSpot10.png";
+import Blog from  "@/images/projectImages/BlogSpot/BlogSpot.png";
+import Blog1 from "@/images/projectImages/BlogSpot/BlogSpot1.png";
+import Blog2 from "@/images/projectImages/BlogSpot/BlogSpot2.png";
+import Blog3 from "@/images/projectImages/BlogSpot/BlogSpot3.png";
+import Blog4 from "@/images/projectImages/BlogSpot/BlogSpot4.png";
+import Blog5 from "@/images/projectImages/BlogSpot/BlogSpot5.png";
+import Blog6 from "@/images/projectImages/BlogSpot/BlogSpot6.png";
+import Blog7 from "@/images/projectImages/BlogSpot/BlogSpot7.png";
+import Blog8 from "@/images/projectImages/BlogSpot/BlogSpot8.png";
+import Blog9 from "@/images/projectImages/BlogSpot/BlogSpot9.png";
+import Blog10 from "@/images/projectImages/BlogSpot/BlogSpot10.png";
 
-import Gpt1 from "@/images/projectImages/F1-GPT1.png";
-import Gpt2 from "@/images/projectImages/F1-GPT2.png";
-import Gpt3 from "@/images/projectImages/F1-GPT3.png";
-import Gpt4 from "@/images/projectImages/F1-GPT4.png";
+import Gpt1 from "@/images/projectImages/F1Gpt/F1-GPT1.png";
+import Gpt2 from "@/images/projectImages/F1Gpt/F1-GPT2.png";
+import Gpt3 from "@/images/projectImages/F1Gpt/F1-GPT3.png";
+import Gpt4 from "@/images/projectImages/F1Gpt/F1-GPT4.png";
 
-import ZuperMart1 from '@/images/projectImages/zuper-mart1.png'
-import ZuperMart2 from '@/images/projectImages/zuper-mart2.png'
-import ZuperMart3 from '@/images/projectImages/zuper-mart3.jpg'
-import ZuperMart4 from '@/images/projectImages/zuper-mart4.jpg'
-import ZuperMart5 from '@/images/projectImages/zuper-mart5.jpg'
+import ZuperMart1 from "@/images/projectImages/Zuper-Mart/zuper-mart1.png";
+import ZuperMart2 from "@/images/projectImages/Zuper-Mart/zuper-mart2.png";
+import ZuperMart3 from "@/images/projectImages/Zuper-Mart/zuper-mart3.jpg";
+import ZuperMart4 from "@/images/projectImages/Zuper-Mart/zuper-mart4.jpg";
+import ZuperMart5 from "@/images/projectImages/Zuper-Mart/zuper-mart5.jpg";
+
+import MeghanaElectronics1 from '@/images/projectImages/Meghana-Electronics/M.E.1.jpg'
+import MeghanaElectronics2 from '@/images/projectImages/Meghana-Electronics/M.E.2.jpg'
+import MeghanaElectronics3 from '@/images/projectImages/Meghana-Electronics/M.E.3.jpg'
+import MeghanaElectronics4 from '@/images/projectImages/Meghana-Electronics/M.E.4.jpg'
+import MeghanaElectronics5 from '@/images/projectImages/Meghana-Electronics/M.E.5.jpg'
 
 export const Projects: Project[] = [
   {
-    Title: "ZUPER-MART-ASSISTANT",
-    Description: "It can assist you regarding the products sold in zuper mart(a fictional super market)",
+    Title: "MEGHANA ELECTRONICS",
+    Description:
+      "A Website for expert TV repairing technician",
     Date: "December , 2024",
-    Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4,ZuperMart5],
+    Image: [MeghanaElectronics1, MeghanaElectronics2, MeghanaElectronics3, MeghanaElectronics4, MeghanaElectronics5],
+    Link: "www.meghanaelectronics.com",
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript","Cloudinary"],
+  },
+  {
+    Title: "ZUPER-MART-ASSISTANT",
+    Description:
+      "It can assist you regarding the products sold in zuper mart(a fictional super market)",
+    Date: "December , 2024",
+    Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4, ZuperMart5],
     Link: "https://f1-gpt-delta.vercel.app/",
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
   },
@@ -119,5 +135,6 @@ export const Projects: Project[] = [
     Date: "April , 2024",
     TechStack: ["React", "Tailwind CSS", "JavaScript", "BootStrap"],
   },
-  
 ];
+
+

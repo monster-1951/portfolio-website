@@ -10,7 +10,7 @@ const Blogs = () => {
     <div className="min-h-screen">
     {BlogsList.map((Blog, index) => {
       return (
-       <div className="inset-0 bg-gradient-to-b from-black/60 to-black/60 sm:border sm:rounded-xl text-white p-3 leading-8 text-xl w-fit sm:w-[80%] text-wrap mx-auto sm:px-16 px-10  xl:w-[60%] space-y-3">
+       <div key={index} className="inset-0 bg-gradient-to-b from-black/60 to-black/60 sm:border sm:rounded-xl text-white p-3 leading-8 text-xl w-fit sm:w-[80%] text-wrap mx-auto sm:px-16 px-10  xl:w-[60%] space-y-3">
            <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeHighlight]}

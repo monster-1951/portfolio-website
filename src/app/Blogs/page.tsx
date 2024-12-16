@@ -2,7 +2,6 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm"; // For GitHub Flavored Markdown (tables, strikethrough, etc.)
 import rehypeHighlight from "rehype-highlight"; // For syntax highlighting
-import { BlogsList } from "@/constants/Blogs";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 const page = ({Blog}:{Blog:string}) => {

@@ -5,28 +5,27 @@ import { sendAcknowledgeEmail } from "@/helpers/sendAcknowledgeEmail";
 
 export async function POST(request: Request) {
   await dbConnect();
-  
+
   // console.log({ Name, Email, Message }, "route");
-  
+
   try {
     const { Name, Email, Message } = await request.json();
 
-     // Send email
+    // Send email
 
-     const emailResponse =await sendAcknowledgeEmail(Name, Message,Email);
-     if (!emailResponse.success) {
-       return Response.json(
-         {
-           success: false,
-           message: emailResponse.message,
-         },
-         {
-           status: 500,
-         }
-       );
-     }
+    const emailResponse = await sendAcknowledgeEmail(Name, Message, Email);
+    if (!emailResponse.success) {
+      return Response.json(
+        {
+          success: false,
+          message: emailResponse.message,
+        },
+        {
+          status: 500,
+        }
+      );
+    }
 
-     
     // Create new message
 
     const newMessage = new MessageModel({
@@ -36,13 +35,8 @@ export async function POST(request: Request) {
     });
     await newMessage.save();
 
-   
-
-
-
-
     return Response.json(
-      { success: true, newMessage,email:emailResponse },
+      { success: true, newMessage, email: emailResponse },
       {
         status: 201,
       }

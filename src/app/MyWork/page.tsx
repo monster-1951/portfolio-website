@@ -3,10 +3,6 @@ import ProjectCarousel from "@/components/custom/ProjectCarousel";
 import { Projects } from "@/constants/ProjectsDetails";
 import { GiDiamonds } from "react-icons/gi";
 
-
-
-
-
 const page = () => {
   return (
     <>

@@ -2,9 +2,6 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import image1 from "@/images/1.jpg";
-import image2 from "@/images/2.jpg";
-import image3 from "@/images/3.jpg";
 import { FetchPost } from "@/actions/FetchBlogs";
 import { Post } from "@/types/Post";
 

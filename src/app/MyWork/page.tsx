@@ -10,10 +10,10 @@ import { GiDiamonds } from "react-icons/gi";
 const page = () => {
   return (
     <>
-      <div className="glass text-3xl font-semibold text-center py-2">
+      <div className=" text-3xl font-semibold text-center py-2">
         Explore the projects done by me
         <div className="p-2 sticky text-center flex justify-center">
-      <GiDiamonds className="w-10 text-white h-10 " /> <p className="p-2 text-xl">These are just few samples  </p><GiDiamonds className="w-10 text-white h-10 " />
+      <GiDiamonds className="w-10 text-black h-10 " /> <p className="p-2 text-xl">These are just few samples  </p><GiDiamonds className="w-10 text-black h-10 " />
       </div>
       </div>
      

@@ -7,7 +7,7 @@ const NavigateAboutPage = () => {
     <div
       className="flex justify-end sticky top-[100px] z-20 h-0"
     >
-      <DiamondDropDown/>
+      <DiamondDropDown />
     </div>
   );
 };

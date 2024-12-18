@@ -18,6 +18,7 @@
     "@radix-ui/react-toast": "^1.2.1",
     "@react-email/components": "^0.0.25",
     "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.3.0",
@@ -35,7 +36,7 @@
     "react-loader-spinner": "^6.1.6",
     "react-lottie": "^1.2.4",
     "react-markdown": "^9.0.1",
-    "rehype-highlight": "^7.0.1",
+    "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.0",
     "resend": "^4.0.0",
     "tailwind-merge": "^2.5.2",
@@ -43,6 +44,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/html-to-text": "^9.0.4",
     "@types/node": "^20",
     "@types/react": "^18.3.16",

@@ -78,18 +78,18 @@ const ContactForm = () => {
     });
   }
   return (
-    <div className="-mt-5 w-[80%] mx-auto h-[90vh] flex items-center">
+    <div className="-mt-5 w-[80%] mx-auto h-[90vh] flex items-center ">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="glass space-y-8 w-[80%] sm:w-[60%] md:w-[45%] lg:w-[70%] mx-auto p-5 rounded-b-2xl rounded-t-2xl flex flex-col lg:flex-row h-fit"
+          className="glass space-y-8 w-[80%] sm:w-[60%] md:w-[45%] lg:w-[70%] mx-auto p-5 rounded-b-2xl rounded-t-2xl flex flex-col h-fit "
         >
-          <h1 className="p-3 font-bold text-center border-b-2 lg:border-b-0 flex justify-center items-center lg:text-xl">
-            <p>
+          <p className="p-3 font-bold text-center border-b-2 lg:border-b-0 flex justify-center items-center w-full ">
+            <p className="text-nowrap text-xl w-full">
               Enter your details <br /> Shiva Shankar <br />
               will Contact you shortly
             </p>
-          </h1>
+          </p>
           <div className="lg:p-3">
             <FormField
               control={form.control}
@@ -173,9 +173,9 @@ const ContactForm = () => {
                 </FormItem>
               )}
             />
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <Button
-                className="glassButton hover:text-lg rounded-xl"
+                className="glassButton red hover:text-lg rounded-xl"
                 type="submit"
               >
                 {Sending ? "Please wait....." : " Submit"}

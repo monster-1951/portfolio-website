@@ -22,7 +22,7 @@ const ViewImageDialog = ({Projectt,i}:ViewImageDialogProps) => {
       <DialogTrigger className="text-xs px-3">
         View Image
       </DialogTrigger>
-      <DialogContent className="glass">
+      <DialogContent className="bg-white border">
         <DialogHeader>
           <DialogTitle className="p-3">
             {Project.Title} , Image {i + 1}

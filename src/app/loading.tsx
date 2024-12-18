@@ -3,7 +3,7 @@ import React from 'react'
 import { CirclesWithBar } from "react-loader-spinner";
 
 const loading = () => {
-  const color = "#006494"
+  const color = "#ff3131"
   return (
     <div className='glass w-screen h-[90vh] flex justify-center items-center'>
       <CirclesWithBar

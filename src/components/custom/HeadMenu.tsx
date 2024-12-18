@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HomeIcon } from "@radix-ui/react-icons";
 import { CiCircleInfo } from "react-icons/ci";
 import { IoPersonAddOutline } from "react-icons/io5";
+import { MdOutlineArticle } from "react-icons/md";
 import {
   Sheet,
   SheetContent,
@@ -23,12 +24,20 @@ const HeadMenu = () => {
         </span>
         <GiHamburgerMenu className="md:hidden" />
       </SheetTrigger>
-      <SheetContent className="hover:font-bold glass">
+      <SheetContent className="hover:font-bold glass bg-white">
         <SheetHeader className="p-3">
           <SheetTitle>
             <Link href={"/"} className="flex space-x-3 w-full">
               <HomeIcon className="mt-1" />
               <span>Go to home</span>
+            </Link>
+          </SheetTitle>
+        </SheetHeader>
+        <SheetHeader className="p-3">
+          <SheetTitle>
+            <Link href={"/Blog"} className="flex space-x-3">
+              <MdOutlineArticle className="mt-1" />
+              <span>Blog</span>
             </Link>
           </SheetTitle>
         </SheetHeader>

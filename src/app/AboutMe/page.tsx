@@ -139,7 +139,7 @@ const AboutMe = () => {
   return (
     <>
     <NavigateAboutPage/>
-      <div className="sm:flex-row sm:justify-between glass flex flex-col p-3 hideScrollBarFireFox hideScrollBar h-fit">
+      <div className="sm:flex-row sm:justify-between glass flex flex-col p-3   h-fit">
         <div id="Info" className="flex flex-col">
           <div className="flex flex-col ">
             <Image
@@ -148,7 +148,7 @@ const AboutMe = () => {
               className="sm:hidden inline w-52 mx-auto rounded-full mt-2 "
             />
             <div id="name" className="p-3 border-b-2">
-              <h1 className="font-extrabold text-center sm:text-left text-2xl">
+              <h1 className="font-extrabold text-center sm:text-left text-2xl ">
                 Shiva Shankar Buyyankar
               </h1>
               <h3
@@ -206,7 +206,7 @@ const AboutMe = () => {
             />
             <MySocialHandles AboutPage={false} style="hidden sm:flex lg:hidden sm:justify-center" />
           </div>
-          <div className="p-3 mx-auto sm:border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto hideScrollBar hideScrollBarFireFox sm:h-[449px] h-fit">
+          <div className="p-3 mx-auto sm:border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto   sm:h-[449px] h-fit">
             <div className="font-bold text-2xl"> How I can help You</div>
             <div className="flex space-x-2 mt-5">
               <p>
@@ -230,7 +230,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row">
-        <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2 hideScrollBarFireFox hideScrollBar overflow-y-auto">
+        <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2   overflow-y-auto">
           <div className="font-bold text-2xl"> Why should you prefer me ?</div>
           <div className="mt-5 p-5">{bulletMapp(WhyMe)}</div>
           <p className="font-semibold">
@@ -239,7 +239,7 @@ const AboutMe = () => {
             expectations!
           </p>
         </div>
-        <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2 hideScrollBarFireFox hideScrollBar overflow-y-auto">
+        <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2  overflow-y-scroll">
           <div className="font-bold text-2xl">Personal Information</div>
           <div className="mt-5 p-5">{bulletMapp(PersonalLife)} </div>
         </div>

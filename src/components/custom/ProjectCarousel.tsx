@@ -30,9 +30,9 @@ interface ProjectCarouselProps {
 const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
   const Project: Project = Projectt;
   return (
-    <Card>
+    <Card className="">
       <CardHeader className="">
-        <CardTitle className="text-center text-2xl border-b-2">
+        <CardTitle className="text-center text-2xl border-b-2 red">
           {Project.Title}
         </CardTitle>
       </CardHeader>
@@ -48,7 +48,7 @@ const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
           <CarouselContent className="">
             {Project.Image.map((image, i) => {
               return (
-                <CarouselItem className="h-[180px] my-auto " key={i}>
+                <CarouselItem className="h-[180px] my-auto shadow-inner shadow-red-300" key={i}>
                   <Image
                     alt="BlogSpot"
                     src={Project.Image[i]}
@@ -85,11 +85,11 @@ const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
           className="text-center w-full flex justify-start"
           target="_blank"
         >
-          <Button className="glass">Visit the project</Button>
+          <Button className="red">Visit the project</Button>
         </Link>
-        {Project.StarRating?.length && <div className="glass flex">
+        {Project.StarRating?.length && <div id="ClientRating" className=" flex">
           <div className="font-bold p-3 flex">Client Rating :</div>
-          <div className="flex  h-full my-auto p-3 space-x-3">
+          <div  className=" flex  h-full my-auto p-3 space-x-3">
           {Project.StarRating.map((rating,index) => {
             return (
               <span key={index} className="flex "> &#9733;</span>

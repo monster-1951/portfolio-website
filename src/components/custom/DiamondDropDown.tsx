@@ -43,10 +43,10 @@ const DiamondDropDown = () => {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger>
-          <GiDiamonds className="w-10 text-white h-10 " />
+          <GiDiamonds className="w-10 text-black h-10 " />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="glass">
-          <DropdownMenuLabel>Quick Links</DropdownMenuLabel>
+        <DropdownMenuContent className="bg-white">
+          <DropdownMenuLabel className="underline underline-offset-1">Quick Links</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem onClick={MoveToWhoAmI}>Who am I?</DropdownMenuItem>
           <DropdownMenuItem onClick={MoveToHowCanIHelpYou}>How I can help you?</DropdownMenuItem>

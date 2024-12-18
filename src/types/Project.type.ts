@@ -7,5 +7,5 @@ export interface Project{
     Date: string;
     TechStack: string[];
     Review?:string;
-    StarRating?:Number[]
+    StarRating?:number[]
 }

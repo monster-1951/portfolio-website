@@ -87,6 +87,17 @@ const ProjectCarousel = ({ Projectt }: ProjectCarouselProps) => {
         >
           <Button className="glass">Visit the project</Button>
         </Link>
+        {Project.StarRating?.length && <div className="glass flex">
+          <div className="font-bold p-3 flex">Client Rating :</div>
+          <div className="flex  h-full my-auto p-3 space-x-3">
+          {Project.StarRating.map((rating,index) => {
+            return (
+              <span key={index} className="flex "> &#9733;</span>
+            )
+          }
+          )}
+          </div>
+        </div>}
       </CardFooter>
     </Card>
   );

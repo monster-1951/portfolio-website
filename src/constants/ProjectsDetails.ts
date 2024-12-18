@@ -54,6 +54,7 @@ export const Projects: Project[] = [
     Image: [MeghanaElectronics1, MeghanaElectronics2, MeghanaElectronics3, MeghanaElectronics4, MeghanaElectronics5],
     Link: "www.meghanaelectronics.com",
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript","Cloudinary"],
+    StarRating:[1,1,1,1,1]
   },
   {
     Title: "ZUPER-MART-ASSISTANT",

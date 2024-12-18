@@ -6,4 +6,6 @@ export interface Project{
     Link: string;
     Date: string;
     TechStack: string[];
+    Review?:string;
+    StarRating?:Number[]
 }

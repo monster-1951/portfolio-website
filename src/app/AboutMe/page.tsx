@@ -95,8 +95,7 @@ const PersonalLife = [
   },
   {
     Head: "Tech Stack",
-    Point:
-      "NextJS , MongoDB , TypeScript",
+    Point: "NextJS , MongoDB , TypeScript",
   },
   {
     Head: "How can I help you",
@@ -108,9 +107,9 @@ const PersonalLife = [
     Point:
       "Feel free to explore my portfolio and see the projects I’ve worked on. If you’re looking to build something amazing together, let’s connect!",
   },
-  
 ];
 const AboutMe = () => {
+  
   const mapp = (array: string[]) => {
     return array.map((point, i) => {
       return (
@@ -134,18 +133,18 @@ const AboutMe = () => {
     });
   };
 
- 
-  
   return (
     <>
-    <NavigateAboutPage/>
+      <NavigateAboutPage />
       <div className="sm:flex-row sm:justify-between glass flex flex-col p-3   h-fit">
         <div id="Info" className="flex flex-col">
           <div className="flex flex-col ">
             <Image
               alt="MySelf"
               src={myself}
-              className="sm:hidden inline w-52 mx-auto rounded-full mt-2 "
+              className="sm:hidden inline w-60 h-fit mx-auto rounded-full mt-2 "
+              width={1000}
+              height={1000}
             />
             <div id="name" className="p-3 border-b-2">
               <h1 className="font-extrabold text-center sm:text-left text-2xl ">
@@ -159,8 +158,11 @@ const AboutMe = () => {
               </h3>
             </div>
           </div>
-          <div id="bio" className="p-3 text-base space-y-3 ">
-            <div className="w- space-y-3 border-b-2 pb-5 md:border- md:px-2 md:pb-2 md:pt-2 sm:h-[580px]">
+          <div
+            id="bio"
+            className="p-3 text-base space-y-3 overflow-y-scroll border-b-2"
+          >
+            <div className="space-y-3 pb-5 md:px-2 md:pb-2 md:pt-2 sm:h-[580px]">
               <div className="font-bold text-2xl"> Who am I?</div>
               <div className="p-5">
                 <div className="flex space-x-2 p-2">
@@ -203,8 +205,13 @@ const AboutMe = () => {
               alt="MySelf"
               src={myself}
               className="sm:w-52 sm:h-52 hidden sm:flex lg:hidden mx-auto rounded-full"
+              width={1000}
+              height={1000}
             />
-            <MySocialHandles AboutPage={false} style="hidden sm:flex lg:hidden sm:justify-center" />
+            <MySocialHandles
+              AboutPage={false}
+              style="hidden sm:flex lg:hidden sm:justify-center"
+            />
           </div>
           <div className="p-3 mx-auto sm:border-b-2 pb-3 sm:border-t-2 mt-2 lg:mt-[72px] lg:h-[590px] overflow-y-auto   sm:h-[449px] h-fit">
             <div className="font-bold text-2xl"> How I can help You</div>
@@ -226,9 +233,12 @@ const AboutMe = () => {
             alt="MySelf"
             src={myself}
             className="sm:w-52 sm:h-52 hidden lg:flex mx-auto rounded-full "
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
+
       <div className="flex flex-col sm:flex-row">
         <div className="glass p-3 mx-auto border-b-2 pb-3 sm:border-t-2 sm:h-[449px] 2xl:border-l-2   overflow-y-auto">
           <div className="font-bold text-2xl"> Why should you prefer me ?</div>
@@ -244,7 +254,6 @@ const AboutMe = () => {
           <div className="mt-5 p-5">{bulletMapp(PersonalLife)} </div>
         </div>
       </div>
-      
     </>
   );
 };

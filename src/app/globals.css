@@ -100,3 +100,6 @@ code{
   font-weight: 600;
 }
 
+a{
+  text-decoration: underline;
+}

@@ -22,7 +22,7 @@ const Blog = async ({ params }: { params: { id: string } }) => {
         {Blogg.Title}
       </div>
       <div className="xl:w-[70%] mx-auto space-y-10">
-        <div className="space-y-3 border p-5">
+        <div className="space-y-3 border p-5 blog">
           <ReactMarkdown
             className={""}
             remarkPlugins={[remarkGfm]}

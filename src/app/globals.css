@@ -100,6 +100,12 @@ code{
   font-weight: 600;
 }
 
-a{
+.blog a {
+  color: blue;
+  text-decoration: none;
+}
+
+.blog a:hover {
   text-decoration: underline;
 }
+

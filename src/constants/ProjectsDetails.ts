@@ -62,7 +62,7 @@ export const Projects: Project[] = [
       "It can assist you regarding the products sold in zuper mart(a fictional super market)",
     Date: "December , 2024",
     Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4, ZuperMart5],
-    Link: "https://f1-gpt-delta.vercel.app/",
+    Link: "https://zuper-mart-assistant.vercel.app/",
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
   },
   {

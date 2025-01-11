@@ -52,7 +52,7 @@ export const Projects: Project[] = [
       "A Website for expert TV repairing technician",
     Date: "December , 2024",
     Image: [MeghanaElectronics1, MeghanaElectronics2, MeghanaElectronics3, MeghanaElectronics4, MeghanaElectronics5],
-    Link: "www.meghanaelectronics.com",
+    Link: "https://www.meghanaelectronics.com/",
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript","Cloudinary"],
     StarRating:[1,1,1,1,1]
   },

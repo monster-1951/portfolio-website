@@ -7,7 +7,7 @@ import Recipe from "@/images/projectImages/RecipeFinder/Recipe.png";
 import Recipe2 from "@/images/projectImages/RecipeFinder/RecipeFind2.png";
 import Recipe3 from "@/images/projectImages/RecipeFinder/Recipe3.png";
 
-import Medium from  "@/images/projectImages/Medium/Medium.png";
+import Medium from "@/images/projectImages/Medium/Medium.png";
 import Medium1 from "@/images/projectImages/Medium/Medium1.png";
 import Medium2 from "@/images/projectImages/Medium/Medium2.png";
 import Medium3 from "@/images/projectImages/Medium/Medium3.png";
@@ -16,7 +16,7 @@ import Medium5 from "@/images/projectImages/Medium/Medium5.png";
 import Medium6 from "@/images/projectImages/Medium/Medium6.png";
 import Medium7 from "@/images/projectImages/Medium/Medium7.png";
 
-import Blog from  "@/images/projectImages/BlogSpot/BlogSpot.png";
+import Blog from "@/images/projectImages/BlogSpot/BlogSpot.png";
 import Blog1 from "@/images/projectImages/BlogSpot/BlogSpot1.png";
 import Blog2 from "@/images/projectImages/BlogSpot/BlogSpot2.png";
 import Blog3 from "@/images/projectImages/BlogSpot/BlogSpot3.png";
@@ -39,22 +39,41 @@ import ZuperMart3 from "@/images/projectImages/Zuper-Mart/zuper-mart3.jpg";
 import ZuperMart4 from "@/images/projectImages/Zuper-Mart/zuper-mart4.jpg";
 import ZuperMart5 from "@/images/projectImages/Zuper-Mart/zuper-mart5.jpg";
 
-import MeghanaElectronics1 from '@/images/projectImages/Meghana-Electronics/M.E.1.jpg'
-import MeghanaElectronics2 from '@/images/projectImages/Meghana-Electronics/M.E.2.jpg'
-import MeghanaElectronics3 from '@/images/projectImages/Meghana-Electronics/M.E.3.jpg'
-import MeghanaElectronics4 from '@/images/projectImages/Meghana-Electronics/M.E.4.jpg'
-import MeghanaElectronics5 from '@/images/projectImages/Meghana-Electronics/M.E.5.jpg'
+import MeghanaElectronics1 from "@/images/projectImages/Meghana-Electronics/M.E.1.jpg";
+import MeghanaElectronics2 from "@/images/projectImages/Meghana-Electronics/M.E.2.jpg";
+import MeghanaElectronics3 from "@/images/projectImages/Meghana-Electronics/M.E.3.jpg";
+import MeghanaElectronics4 from "@/images/projectImages/Meghana-Electronics/M.E.4.jpg";
+import MeghanaElectronics5 from "@/images/projectImages/Meghana-Electronics/M.E.5.jpg";
+
+
+import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg"
 
 export const Projects: Project[] = [
   {
+    Title: "KIDZ CLUB",
+    Description: `"KIDZ CLUB" is an AI-powered app designed to create a safe, educational, and engaging digital space for children while enabling parental supervision. It offers Kidz Mode with features like brain-boosting activities, educational content, gaming, e-commerce, and social connections, while Parent Mode includes screen time control, video recommendations, virtual meetups, and customized shopping. With AI-driven behavior analysis, a virtual teacher, and creative tools, the app helps children learn, play, and develop essential skills for an AI-driven world.`,
+    Date: "February , 2025",
+    Image: [
+      KidzClub1
+    ],
+    Link: "https://kidzz-club.vercel.app/",
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI"],
+    StarRating: [1, 1, 1, 1, 1],
+  },
+  {
     Title: "MEGHANA ELECTRONICS",
-    Description:
-      "A Website for expert TV repairing technician",
+    Description: "A Website for expert TV repairing technician",
     Date: "December , 2024",
-    Image: [MeghanaElectronics1, MeghanaElectronics2, MeghanaElectronics3, MeghanaElectronics4, MeghanaElectronics5],
+    Image: [
+      MeghanaElectronics1,
+      MeghanaElectronics2,
+      MeghanaElectronics3,
+      MeghanaElectronics4,
+      MeghanaElectronics5,
+    ],
     Link: "https://www.meghanaelectronics.com/",
-    TechStack: ["NextJS", "Tailwind CSS", "TypeScript","Cloudinary"],
-    StarRating:[1,1,1,1,1]
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "Cloudinary"],
+    StarRating: [1, 1, 1, 1, 1],
   },
   {
     Title: "ZUPER-MART-ASSISTANT",
@@ -137,5 +156,3 @@ export const Projects: Project[] = [
     TechStack: ["React", "Tailwind CSS", "JavaScript", "BootStrap"],
   },
 ];
-
-

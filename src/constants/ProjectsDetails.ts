@@ -58,7 +58,7 @@ import Chatbot6 from "@/images/projectImages/Simple-Chatbot/6.png"
 
 export const Projects: Project[] = [
   {
-    Title: "KIDZ CLUB",
+    Title: "Conversational Chatbot",
     Description: `Simple Conversational chatbot . You can chat with a simple assistant or a mentor or even with a pirate too!`,
     Date: "26 February , 2025",
     Image: [

@@ -48,7 +48,26 @@ import MeghanaElectronics5 from "@/images/projectImages/Meghana-Electronics/M.E.
 
 import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg"
 
+import Chatbot1 from "@/images/projectImages/Simple-Chatbot/1.png"
+import Chatbot2 from "@/images/projectImages/Simple-Chatbot/2.png"
+import Chatbot3 from "@/images/projectImages/Simple-Chatbot/3.png"
+import Chatbot4 from "@/images/projectImages/Simple-Chatbot/4.png"
+import Chatbot5 from "@/images/projectImages/Simple-Chatbot/5.png"
+import Chatbot6 from "@/images/projectImages/Simple-Chatbot/6.png"
+
+
 export const Projects: Project[] = [
+  {
+    Title: "KIDZ CLUB",
+    Description: `Simple Conversational chatbot . You can chat with a simple assistant or a mentor or even with a pirate too!`,
+    Date: "26 February , 2025",
+    Image: [
+     Chatbot1,Chatbot2,Chatbot3,Chatbot4,Chatbot5,Chatbot6
+    ],
+    Link: "https://simple-conversation-chatbot.vercel.app/",
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI"],
+    StarRating: [1, 1, 1, 1, 1],
+  },
   {
     Title: "KIDZ CLUB",
     Description: `"KIDZ CLUB" is an AI-powered app designed to create a safe, educational, and engaging digital space for children while enabling parental supervision. It offers Kidz Mode with features like brain-boosting activities, educational content, gaming, e-commerce, and social connections, while Parent Mode includes screen time control, video recommendations, virtual meetups, and customized shopping. With AI-driven behavior analysis, a virtual teacher, and creative tools, the app helps children learn, play, and develop essential skills for an AI-driven world.`,

@@ -55,8 +55,26 @@ import Chatbot4 from "@/images/projectImages/Simple-Chatbot/4.png"
 import Chatbot5 from "@/images/projectImages/Simple-Chatbot/5.png"
 import Chatbot6 from "@/images/projectImages/Simple-Chatbot/6.png"
 
+import LangCorp1 from "@/images/projectImages/customer-support-chatbot/1.png"
+import LangCorp2 from "@/images/projectImages/customer-support-chatbot/2.png"
+import LangCorp3 from "@/images/projectImages/customer-support-chatbot/3.png"
+import LangCorp4 from "@/images/projectImages/customer-support-chatbot/4.png"
+import LangCorp5 from "@/images/projectImages/customer-support-chatbot/5.png"
+import LangCorp6 from "@/images/projectImages/customer-support-chatbot/6.png"
+
 
 export const Projects: Project[] = [
+  {
+    Title: "Customer Support Chatbot",
+    Description: `LangCorp's AI-powered customer support chatbot assists users with product inquiries, troubleshooting, billing, and order-related questions. It provides instant responses, helping customers resolve issues efficiently.`,
+    Date: "30 March , 2025",
+    Image: [
+      LangCorp1,LangCorp2,LangCorp3,LangCorp4,LangCorp5,LangCorp6
+    ],
+    Link: "https://simple-conversation-chatbot.vercel.app/",
+    TechStack: ["LangChain","NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI",],
+    StarRating: [1, 1, 1, 1, 1],
+  },
   {
     Title: "Conversational Chatbot",
     Description: `Simple Conversational chatbot . You can chat with a simple assistant or a mentor or even with a pirate too!`,

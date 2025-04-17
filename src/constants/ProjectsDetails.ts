@@ -71,7 +71,7 @@ export const Projects: Project[] = [
     Image: [
       LangCorp1,LangCorp2,LangCorp3,LangCorp4,LangCorp5,LangCorp6
     ],
-    Link: "https://simple-conversation-chatbot.vercel.app/",
+    Link: "https://customer-support-chatbot-umber.vercel.app/",
     TechStack: ["LangChain","NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI",],
     StarRating: [1, 1, 1, 1, 1],
   },

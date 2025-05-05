@@ -33,17 +33,6 @@ import Gpt2 from "@/images/projectImages/F1Gpt/F1-GPT2.png";
 import Gpt3 from "@/images/projectImages/F1Gpt/F1-GPT3.png";
 import Gpt4 from "@/images/projectImages/F1Gpt/F1-GPT4.png";
 
-import ZuperMart1 from "@/images/projectImages/Zuper-Mart/zuper-mart1.png";
-import ZuperMart2 from "@/images/projectImages/Zuper-Mart/zuper-mart2.png";
-import ZuperMart3 from "@/images/projectImages/Zuper-Mart/zuper-mart3.jpg";
-import ZuperMart4 from "@/images/projectImages/Zuper-Mart/zuper-mart4.jpg";
-import ZuperMart5 from "@/images/projectImages/Zuper-Mart/zuper-mart5.jpg";
-
-import MeghanaElectronics1 from "@/images/projectImages/Meghana-Electronics/M.E.1.jpg";
-import MeghanaElectronics2 from "@/images/projectImages/Meghana-Electronics/M.E.2.jpg";
-import MeghanaElectronics3 from "@/images/projectImages/Meghana-Electronics/M.E.3.jpg";
-import MeghanaElectronics4 from "@/images/projectImages/Meghana-Electronics/M.E.4.jpg";
-import MeghanaElectronics5 from "@/images/projectImages/Meghana-Electronics/M.E.5.jpg";
 
 import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg";
 
@@ -96,30 +85,6 @@ export const Projects: Project[] = [
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB", "OpenAI"],
     StarRating: [1, 1, 1, 1, 1],
   },
-  {
-    Title: "MEGHANA ELECTRONICS",
-    Description: "A Website for expert TV repairing technician",
-    Date: "December , 2024",
-    Image: [
-      MeghanaElectronics1,
-      MeghanaElectronics2,
-      MeghanaElectronics3,
-      MeghanaElectronics4,
-      MeghanaElectronics5,
-    ],
-    Link: "https://www.meghanaelectronics.com/",
-    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "Cloudinary"],
-    StarRating: [1, 1, 1, 1, 1],
-  },
-  // {
-  //   Title: "ZUPER-MART-ASSISTANT",
-  //   Description:
-  //     "It can assist you regarding the products sold in zuper mart(a fictional super market)",
-  //   Date: "December , 2024",
-  //   Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4, ZuperMart5],
-  //   Link: "https://zuper-mart-assistant.vercel.app/",
-  //   TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
-  // },
   {
     Title: "F1-GPT",
     Description: "Ask it anything about Formula One Racing car",

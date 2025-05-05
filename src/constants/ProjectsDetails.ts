@@ -45,56 +45,55 @@ import MeghanaElectronics3 from "@/images/projectImages/Meghana-Electronics/M.E.
 import MeghanaElectronics4 from "@/images/projectImages/Meghana-Electronics/M.E.4.jpg";
 import MeghanaElectronics5 from "@/images/projectImages/Meghana-Electronics/M.E.5.jpg";
 
+import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg";
 
-import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg"
+import Chatbot1 from "@/images/projectImages/Simple-Chatbot/1.png";
+import Chatbot2 from "@/images/projectImages/Simple-Chatbot/2.png";
+import Chatbot3 from "@/images/projectImages/Simple-Chatbot/3.png";
+import Chatbot4 from "@/images/projectImages/Simple-Chatbot/4.png";
+import Chatbot5 from "@/images/projectImages/Simple-Chatbot/5.png";
+import Chatbot6 from "@/images/projectImages/Simple-Chatbot/6.png";
 
-import Chatbot1 from "@/images/projectImages/Simple-Chatbot/1.png"
-import Chatbot2 from "@/images/projectImages/Simple-Chatbot/2.png"
-import Chatbot3 from "@/images/projectImages/Simple-Chatbot/3.png"
-import Chatbot4 from "@/images/projectImages/Simple-Chatbot/4.png"
-import Chatbot5 from "@/images/projectImages/Simple-Chatbot/5.png"
-import Chatbot6 from "@/images/projectImages/Simple-Chatbot/6.png"
-
-import LangCorp1 from "@/images/projectImages/customer-support-chatbot/1.png"
-import LangCorp2 from "@/images/projectImages/customer-support-chatbot/2.png"
-import LangCorp3 from "@/images/projectImages/customer-support-chatbot/3.png"
-import LangCorp4 from "@/images/projectImages/customer-support-chatbot/4.png"
-import LangCorp5 from "@/images/projectImages/customer-support-chatbot/5.png"
-import LangCorp6 from "@/images/projectImages/customer-support-chatbot/6.png"
-
+import LangCorp1 from "@/images/projectImages/customer-support-chatbot/1.png";
+import LangCorp2 from "@/images/projectImages/customer-support-chatbot/2.png";
+import LangCorp3 from "@/images/projectImages/customer-support-chatbot/3.png";
+import LangCorp4 from "@/images/projectImages/customer-support-chatbot/4.png";
+import LangCorp5 from "@/images/projectImages/customer-support-chatbot/5.png";
+import LangCorp6 from "@/images/projectImages/customer-support-chatbot/6.png";
 
 export const Projects: Project[] = [
   {
     Title: "Customer Support Chatbot",
     Description: `LangCorp's AI-powered customer support chatbot assists users with product inquiries, troubleshooting, billing, and order-related questions. It provides instant responses, helping customers resolve issues efficiently.`,
     Date: "30 March , 2025",
-    Image: [
-      LangCorp1,LangCorp2,LangCorp3,LangCorp4,LangCorp5,LangCorp6
-    ],
+    Image: [LangCorp1, LangCorp2, LangCorp3, LangCorp4, LangCorp5, LangCorp6],
     Link: "https://customer-support-chatbot-umber.vercel.app/",
-    TechStack: ["LangChain","NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI",],
+    TechStack: [
+      "LangChain",
+      "NextJS",
+      "Tailwind CSS",
+      "TypeScript",
+      "MongoDB",
+      "OpenAI",
+    ],
     StarRating: [1, 1, 1, 1, 1],
   },
   {
     Title: "Conversational Chatbot",
     Description: `Simple Conversational chatbot . You can chat with a simple assistant or a mentor or even with a pirate too!`,
     Date: "26 February , 2025",
-    Image: [
-     Chatbot1,Chatbot2,Chatbot3,Chatbot4,Chatbot5,Chatbot6
-    ],
+    Image: [Chatbot1, Chatbot2, Chatbot3, Chatbot4, Chatbot5, Chatbot6],
     Link: "https://simple-conversation-chatbot.vercel.app/",
-    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI"],
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB", "OpenAI"],
     StarRating: [1, 1, 1, 1, 1],
   },
   {
     Title: "KIDZ CLUB",
     Description: `"KIDZ CLUB" is an AI-powered app designed to create a safe, educational, and engaging digital space for children while enabling parental supervision. It offers Kidz Mode with features like brain-boosting activities, educational content, gaming, e-commerce, and social connections, while Parent Mode includes screen time control, video recommendations, virtual meetups, and customized shopping. With AI-driven behavior analysis, a virtual teacher, and creative tools, the app helps children learn, play, and develop essential skills for an AI-driven world.`,
     Date: "February , 2025",
-    Image: [
-      KidzClub1
-    ],
+    Image: [KidzClub1],
     Link: "https://kidzz-club.vercel.app/",
-    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB","OpenAI"],
+    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "MongoDB", "OpenAI"],
     StarRating: [1, 1, 1, 1, 1],
   },
   {
@@ -112,15 +111,15 @@ export const Projects: Project[] = [
     TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "Cloudinary"],
     StarRating: [1, 1, 1, 1, 1],
   },
-  {
-    Title: "ZUPER-MART-ASSISTANT",
-    Description:
-      "It can assist you regarding the products sold in zuper mart(a fictional super market)",
-    Date: "December , 2024",
-    Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4, ZuperMart5],
-    Link: "https://zuper-mart-assistant.vercel.app/",
-    TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
-  },
+  // {
+  //   Title: "ZUPER-MART-ASSISTANT",
+  //   Description:
+  //     "It can assist you regarding the products sold in zuper mart(a fictional super market)",
+  //   Date: "December , 2024",
+  //   Image: [ZuperMart1, ZuperMart2, ZuperMart3, ZuperMart4, ZuperMart5],
+  //   Link: "https://zuper-mart-assistant.vercel.app/",
+  //   TechStack: ["NextJS", "Tailwind CSS", "TypeScript", "OpenAI", "Datastax"],
+  // },
   {
     Title: "F1-GPT",
     Description: "Ask it anything about Formula One Racing car",

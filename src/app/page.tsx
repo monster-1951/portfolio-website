@@ -9,7 +9,7 @@ export default async function Home() {
   const Blogs = await FetchPosts() as Post[]
 
   return (
-    <main className="bgImage">
+    <main className="">
       <HeroSection />
       <SampleBlogsList Blogs={Blogs}/>
     </main>

@@ -33,7 +33,6 @@ import Gpt2 from "@/images/projectImages/F1Gpt/F1-GPT2.png";
 import Gpt3 from "@/images/projectImages/F1Gpt/F1-GPT3.png";
 import Gpt4 from "@/images/projectImages/F1Gpt/F1-GPT4.png";
 
-
 import KidzClub1 from "@/images/projectImages/KidzClub/KidzClub.jpg";
 
 import Chatbot1 from "@/images/projectImages/Simple-Chatbot/1.png";
@@ -50,7 +49,41 @@ import LangCorp4 from "@/images/projectImages/customer-support-chatbot/4.png";
 import LangCorp5 from "@/images/projectImages/customer-support-chatbot/5.png";
 import LangCorp6 from "@/images/projectImages/customer-support-chatbot/6.png";
 
+import PolicyDost1 from "@/images/projectImages/PolicyDost/1.png";
+import PolicyDost2 from "@/images/projectImages/PolicyDost/2.png";
+import PolicyDost3 from "@/images/projectImages/PolicyDost/3.jpg";
+import PolicyDost4 from "@/images/projectImages/PolicyDost/4.png";
+import PolicyDost5 from "@/images/projectImages/PolicyDost/5.jpg";
+import PolicyDost6 from "@/images/projectImages/PolicyDost/6.jpg";
+import PolicyDost7 from "@/images/projectImages/PolicyDost/7.png";
+
 export const Projects: Project[] = [
+  {
+    Title: "Insurance Agent Lead Management Platform",
+    Description: `A real-world automation platform built for local Indian insurance agents to manage customer leads and follow-ups. The agent inputs customer details and a follow-up date via a Next.js frontend. These are processed by a complex n8n workflow integrated with Airtable, Gmail, and Google Calendar. Each day, agents receive automated email reminders of leads to follow up on. The platform also includes a polished dashboard and secure 2FA login using OTP via email.`,
+    Date: "10 June, 2025",
+    Image: [
+      PolicyDost1,
+      PolicyDost2,
+      PolicyDost3,
+      PolicyDost4,
+      PolicyDost5,
+      PolicyDost6,
+      PolicyDost7,
+    ],
+    Link: "https://insurance-agent-leads.vercel.app/",
+    TechStack: [
+      "NextJS",
+      "n8n",
+      "Tailwind CSS",
+      "TypeScript",
+      "Airtable",
+      "Gmail API",
+      "Google Calendar API",
+    ],
+    StarRating: [1, 1, 1, 1, 1],
+  },
+
   {
     Title: "Customer Support Chatbot",
     Description: `LangCorp's AI-powered customer support chatbot assists users with product inquiries, troubleshooting, billing, and order-related questions. It provides instant responses, helping customers resolve issues efficiently.`,

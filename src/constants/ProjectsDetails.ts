@@ -172,15 +172,6 @@ export const Projects: Project[] = [
     ],
   },
   {
-    Title: "Recipe Finder",
-    Description:
-      "This is the simple web app where you can search for any recipe and get all the recipes with that name including images,ingredients required and a link to know the full recipe . I've built this project with in 2 dedicated days since I was a beginner by that time",
-    Image: [Recipe, Recipe2, Recipe3],
-    Link: "https://monster-1951.github.io/RecipeFinder/",
-    Date: "April , 2024",
-    TechStack: ["React", "Tailwind CSS", "JavaScript", "BootStrap"],
-  },
-  {
     Title: "Weather",
     Description:
       "This was my first minor project . It took me 2 dedicatad days to create this project . In this project you can search for any location and get the temperature, humidity , wind speed of that particular location. Of course it was a simple project but it taught me a lot.",
@@ -189,4 +180,14 @@ export const Projects: Project[] = [
     Date: "April , 2024",
     TechStack: ["React", "Tailwind CSS", "JavaScript", "BootStrap"],
   },
+  {
+    Title: "Recipe Finder",
+    Description:
+      "This is the simple web app where you can search for any recipe and get all the recipes with that name including images,ingredients required and a link to know the full recipe . I've built this project with in 2 dedicated days since I was a beginner by that time",
+    Image: [Recipe, Recipe2, Recipe3],
+    Link: "https://monster-1951.github.io/RecipeFinder/",
+    Date: "April , 2024",
+    TechStack: ["React", "Tailwind CSS", "JavaScript", "BootStrap"],
+  },
+  
 ];
